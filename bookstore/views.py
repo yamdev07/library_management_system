@@ -419,7 +419,7 @@ class LDeleteBook(LoginRequiredMixin,DeleteView):
 	model = Book
 	template_name = 'librarian/confirm_delete2.html'
 	success_url = reverse_lazy('librarian')
-	success_message = 'Data was dele successfully'
+	success_message = 'Data was delete successfully'
 
 
 
@@ -684,14 +684,14 @@ class ADeleteBook(LoginRequiredMixin,DeleteView):
 	model = Book
 	template_name = 'dashboard/confirm_delete2.html'
 	success_url = reverse_lazy('ambook')
-	success_message = 'Data was dele successfully'
+	success_message = 'Data was delete successfully'
 
 
 class ADeleteBookk(LoginRequiredMixin,DeleteView):
 	model = Book
 	template_name = 'dashboard/confirm_delete.html'
 	success_url = reverse_lazy('dashboard')
-	success_message = 'Data was dele successfully'
+	success_message = 'Data was delete successfully'
 
 
 class AViewBook(LoginRequiredMixin,DetailView):
